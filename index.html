@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#8f1d2c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="상하이 일정">
+  <meta name="description" content="2026년 11월 8일부터 11일까지, 두 사람의 상하이 여행 일정">
+  <title>상하이 여행 일정 · 11/8–11</title>
+  <style>
+    :root{--red:#8f1d2c;--red2:#b43a49;--ink:#1d2633;--muted:#687282;--paper:#fffdf8;--cream:#f6f0e6;--line:#e5ddd1;--gold:#b9853f;--green:#28755d;--shadow:0 10px 28px rgba(45,31,20,.08)}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:#eee7dc;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR","PingFang SC",sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+    button,a{font:inherit} button{-webkit-tap-highlight-color:transparent}.app{max-width:720px;margin:auto;min-height:100vh;background:var(--paper);padding-bottom:calc(36px + env(safe-area-inset-bottom))}
+    .hero{padding:calc(22px + env(safe-area-inset-top)) 20px 20px;background:linear-gradient(150deg,#7d1726,#a42d3d);color:#fff;position:relative;overflow:hidden}.hero:after{content:"沪";position:absolute;right:-8px;top:-25px;font-family:serif;font-size:150px;opacity:.08}.eyebrow{font-size:12px;letter-spacing:.18em;font-weight:800;color:#ffd8c4}.hero h1{font-size:29px;line-height:1.2;margin:7px 0 7px;letter-spacing:-.04em}.hero p{margin:0;color:#f7dce0;font-size:14px}.hero-meta{display:flex;gap:8px;flex-wrap:wrap;margin-top:15px}.pill{display:inline-flex;align-items:center;min-height:32px;padding:5px 10px;border-radius:999px;background:rgba(255,255,255,.13);font-size:13px;font-weight:700}.today-box{margin:14px 16px 0;padding:15px;border-radius:16px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow)}.today-label{font-size:12px;color:var(--red);font-weight:900;letter-spacing:.08em}.today-title{font-size:18px;font-weight:900;margin-top:3px}.today-sub{font-size:13px;color:var(--muted);margin-top:2px}
+    .tabs-wrap{position:sticky;top:0;z-index:20;background:rgba(255,253,248,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:10px 12px}.tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}.tab{min-height:48px;border:1px solid var(--line);background:#fff;border-radius:12px;color:var(--muted);font-weight:850;font-size:13px;padding:5px 2px;cursor:pointer}.tab span{display:block;font-size:11px;font-weight:650}.tab.active{color:#fff;background:var(--red);border-color:var(--red);box-shadow:0 5px 14px rgba(143,29,44,.22)}
+    main{padding:18px 16px}.day-head{display:flex;justify-content:space-between;gap:12px;align-items:end;margin-bottom:13px}.day-head h2{font-size:23px;margin:0;letter-spacing:-.04em}.day-head p{font-size:13px;color:var(--muted);margin:3px 0 0}.progress{font-size:12px;font-weight:850;color:var(--green);white-space:nowrap}.bar{height:6px;background:#e9e5de;border-radius:99px;margin:0 0 18px;overflow:hidden}.bar>i{display:block;height:100%;background:var(--green);border-radius:99px;transition:width .25s}
+    .timeline{position:relative}.timeline:before{content:"";position:absolute;left:16px;top:14px;bottom:18px;width:2px;background:#e7ded3}.item{position:relative;margin:0 0 13px 38px;padding:15px;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:0 4px 18px rgba(40,25,15,.045)}.item:before{content:"";position:absolute;left:-29px;top:18px;width:12px;height:12px;border:3px solid var(--paper);border-radius:50%;background:var(--gold);box-shadow:0 0 0 2px var(--gold)}.item.done{opacity:.68;background:#faf9f6}.item.done:before{background:var(--green);box-shadow:0 0 0 2px var(--green)}.item.now{border-color:#ca8b96;box-shadow:0 7px 24px rgba(143,29,44,.13)}.item.now:after{content:"다음";position:absolute;right:11px;top:11px;background:#f8e3e7;color:var(--red);font-weight:900;font-size:11px;padding:3px 7px;border-radius:999px}.time{font-size:12px;color:var(--red);font-weight:900;letter-spacing:.02em}.kind{font-size:11px;background:var(--cream);color:#685743;padding:3px 7px;border-radius:999px;margin-left:5px;font-weight:750}.place{font-size:18px;font-weight:900;margin:4px 0 0;letter-spacing:-.025em;padding-right:36px}.zh{font-size:14px;color:#3d4755;font-weight:700;margin-top:2px}.address{margin-top:8px;padding:9px 10px;background:#f8f5ef;border-radius:10px;font-size:13px;color:#5e626b;word-break:break-all}.detail,.menu{margin-top:9px;font-size:14px;color:#495363}.menu{padding:10px 11px;border-left:3px solid var(--gold);background:#fffaf1;border-radius:0 10px 10px 0}.menu strong{color:#795520}.actions{display:grid;grid-template-columns:1fr 1fr auto;gap:7px;margin-top:12px}.action,.check{min-height:44px;border-radius:11px;border:1px solid #d9d1c5;background:#fff;color:var(--ink);font-weight:850;font-size:13px;text-decoration:none;display:flex;align-items:center;justify-content:center;padding:7px;cursor:pointer}.action.map{background:#edf7f3;border-color:#cae6dc;color:#17664f}.check{width:44px;color:var(--green)}.item.done .check{background:var(--green);color:#fff;border-color:var(--green)}
+    .guide{margin-top:24px;padding:17px;border-radius:18px;background:#192431;color:#fff}.guide h3{margin:0 0 5px;font-size:18px}.guide>p{margin:0 0 12px;color:#bdc8d5;font-size:13px}.step{padding:11px 0;border-top:1px solid rgba(255,255,255,.1);font-size:14px}.phrase{margin-top:7px;padding:10px;background:rgba(255,255,255,.08);border-radius:10px;color:#fff}.phrase button{display:block;margin-top:7px;min-height:40px;border:0;border-radius:9px;padding:6px 11px;background:#fff;color:#192431;font-weight:850;cursor:pointer}.privacy{margin-top:18px;padding:13px;border:1px dashed #d6cabe;border-radius:13px;color:#6b6259;font-size:12px}.toast{position:fixed;z-index:99;left:50%;bottom:calc(24px + env(safe-area-inset-bottom));transform:translate(-50%,20px);background:#18222f;color:#fff;padding:10px 14px;border-radius:999px;font-size:13px;font-weight:800;opacity:0;pointer-events:none;transition:.2s}.toast.show{opacity:1;transform:translate(-50%,0)}
+    @media(max-width:380px){.hero h1{font-size:26px}.place{font-size:17px}.actions{grid-template-columns:1fr 1fr}.check{width:auto;grid-column:1/-1}.tab{font-size:12px}.item{margin-left:34px;padding:13px}.timeline:before{left:14px}.item:before{left:-27px}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+<div class="app">
+  <header class="hero">
+    <div class="eyebrow">SHANGHAI · 上海</div><h1>상하이 여행 일정</h1><p>2026.11.08–11 · 2명 · 현지용 간편 가이드</p>
+    <div class="hero-meta"><span class="pill">📍 장소·주소</span><span class="pill">🗺️ Amap</span><span class="pill">✓ 완료 저장</span></div>
+  </header>
+  <section class="today-box" id="todayBox"></section>
+  <nav class="tabs-wrap" aria-label="날짜별 일정"><div class="tabs" id="tabs"></div></nav>
+  <main><section id="dayView"></section><section class="guide" id="deliveryGuide"></section><div class="privacy">🔒 공개용 일정표입니다. 예약번호, 연락처, 이메일, 결제정보, eSIM 정보, QR코드, 개인 식별정보와 원본 시트 이미지는 포함하지 않았습니다.</div></main>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+const days=[
+{date:'2026-11-08',label:'11/8',weekday:'일',title:'푸동·프라다·와이탄',summary:'도착 완료 후 루자쭈이 쇼핑, 16시 예약, 와이탄 야경',items:[
+{id:'d1-arrive',time:'10:05',kind:'도착',ko:'푸동국제공항 도착',zh:'上海浦东国际机场',address:'上海浦东国际机场 1号航站楼',detail:'OZ361 도착. 입국 수속 후 예약 차량으로 이동.',seedDone:true},
+{id:'d1-hyatt',time:'11:00 전후',kind:'호텔',ko:'그랜드 하얏트 상하이 체크인',zh:'上海金茂君悦大酒店',address:'上海金茂君悦大酒店',detail:'체크인 완료. 공개 페이지에는 객실·예약번호를 표시하지 않음.',seedDone:true},
+{id:'d1-lamb',time:'12:00–14:00',kind:'점심',ko:'헌지우이치엔 양꼬치 · 광인광장점',zh:'很久以前羊肉串(光音广场店)',address:'很久以前羊肉串 光音广场店 上海',detail:'식사 진행 중 또는 종료 예정.',menu:'추천: 양꼬치, 오이무침 또는 부추무침, 달콤한 옥수수, 볶음밥. 국수는 배고픔에 따라 추가.'},
+{id:'d1-disney',time:'14:00–15:30',kind:'쇼핑',ko:'디즈니 플래그십 스토어',zh:'上海迪士尼旗舰店',address:'上海市浦东新区丰和路180号',detail:'인형·키링·상하이 한정 굿즈. 시간 남으면 미니소·세포라·IFC몰은 선택.'},
+{id:'d1-prada',time:'16:00–18:00',kind:'예약',ko:'프라다 카페 · 롱자이',zh:'迷上PRADA荣宅',address:'上海市静安区陕西北路186号',detail:'16:00, 2명, 실내 테이블 예약. 예약자명·결제정보는 제외.',menu:'케이크와 음료. 다음 이동을 위해 17:40부터 마무리 권장.'},
+{id:'d1-bund',time:'18:35–19:00',kind:'야경',ko:'와이탄 · 천이광장',zh:'外滩陈毅广场',address:'上海市黄浦区中山东一路 外滩陈毅广场',detail:'강변 야경과 푸동 스카이라인 촬영 후 호텔 복귀.'},
+{id:'d1-dinner',time:'19:00 이후',kind:'배달',ko:'호텔에서 배달 저녁',zh:'点都德·德小馆 / 红唇串串香',address:'上海金茂君悦大酒店',detail:'메이퇀에서 호텔 로비 수령. 객실 번호는 공개 페이지에 입력하지 않기.',menu:'점도덕: 딤섬류. 레드립스: 麻辣拌(마라반), 감자당면, 소스 추가. 덜 맵게는 少辣.'}
+]},
+{date:'2026-11-09',label:'11/9',weekday:'월',title:'난징동루 쇼핑',summary:'호텔 이동, 게살국수, 쇼핑과 카오위',items:[
+{id:'d2-breakfast',time:'06:30–10:30',kind:'조식',ko:'그랜드 하얏트 조식',zh:'上海金茂君悦大酒店',address:'上海金茂君悦大酒店',detail:'좋은 자리 원하면 07:30 전 입장.'},
+{id:'d2-checkout',time:'12:00까지',kind:'호텔',ko:'그랜드 하얏트 체크아웃',zh:'上海金茂君悦大酒店',address:'上海金茂君悦大酒店',detail:'짐 확인 후 센트럴 호텔로 이동.'},
+{id:'d2-central',time:'12:00–13:00',kind:'호텔',ko:'센트럴 호텔 상하이',zh:'上海王宝和大酒店',address:'上海市黄浦区九江路555号',detail:'가방 보관. 체크인 14:00, 체크아웃 12:00. 예약번호 제외.'},
+{id:'d2-noodle',time:'13:00–14:30',kind:'점심',ko:'장씨네 게살국수',zh:'庄氏隆兴(浙江中路店)',address:'上海市黄浦区浙江中路441号',detail:'게살국수와 샤오롱바오 조합.',menu:'蟹粉拌面(게살 비빔면), 蟹粉小笼包(게살 샤오롱바오). 2명이면 면 1개와 다른 주식 1개로 나눠 먹기.'},
+{id:'d2-shopping',time:'14:30–17:00',kind:'쇼핑',ko:'난징동루 쇼핑 코스',zh:'名创优品 MINISO LAND · 泡泡玛特 · M&M’s World',address:'上海市黄浦区南京东路479号',detail:'미니소랜드 → 팝마트·M&M 월드 → 헤이티. 아디다스·HARMAY는 체력에 따라 선택.'},
+{id:'d2-fish',time:'17:00–19:00',kind:'저녁',ko:'강변성외 카오위',zh:'江边城外烤全鱼(上海世茂店)',address:'上海世茂广场',detail:'쇼핑 동선 안에서 저녁.',menu:'蒜香味(마늘맛) 또는 麻辣味(마라맛). 白菜(배추), 金针菇(팽이버섯) 추가.'},
+{id:'d2-market',time:'19:00–21:00',kind:'마트',ko:'따룬파 대형마트',zh:'大润发(平型关店)',address:'上海市静安区俞泾港路11号',detail:'간식·음료·여행용품 구매 후 호텔 이동.'},
+{id:'d2-hotel',time:'21:00 이후',kind:'호텔',ko:'센트럴 호텔 복귀',zh:'上海王宝和大酒店',address:'上海市黄浦区九江路555号',detail:'원하면 泸溪河, 莉莲蛋挞, 茉酸奶 배달.'}
+]},
+{date:'2026-11-10',label:'11/10',weekday:'화',title:'우캉루·신천지·예원',summary:'브런치와 거리 산책, 훠궈, 예원 야경',items:[
+{id:'d3-brunch',time:'10:00–11:10',kind:'브런치',ko:'ICCF Garden',zh:'之禾卡纷花园',address:'上海市徐汇区衡山路2号',detail:'빵과 커피로 늦은 아침.'},
+{id:'d3-wukang',time:'11:30–13:00',kind:'산책',ko:'우캉맨션·우캉루·안푸루',zh:'武康大楼 · 武康路 · 安福路',address:'上海市徐汇区武康大楼',detail:'프랑스 조계지 거리, 사진, 편집숍. 13DE MARZO CAFE와 아디다스 오리지널스는 선택.'},
+{id:'d3-polux',time:'13:20–14:30',kind:'카페',ko:'POLUX',zh:'POLUX',address:'上海市黄浦区太仓路181弄5号',detail:'14:30부터 브레이크타임. 대기 길면 생략.',menu:'프렌치토스트가 대표 선택.'},
+{id:'d3-xintiandi',time:'14:30–17:00',kind:'쇼핑',ko:'신천지·Matcha Wang',zh:'上海新天地 · Matcha Wang (HAI550店)',address:'上海市黄浦区淮海中路550号 HAI550',detail:'신천지 쇼핑 후 말차 음료. 상황에 따라 순서 조정.'},
+{id:'d3-haidilao',time:'17:25–19:00',kind:'저녁',ko:'하이디라오 성황묘점',zh:'海底捞火锅(城隍庙店)',address:'上海市黄浦区河南南路489号 香港名都4楼',detail:'대기 시간을 앱에서 먼저 확인.',menu:'토마토탕과 마라탕, 고기·버섯·채소·면. 2인용으로 과주문 주의.'},
+{id:'d3-yuyuan',time:'19:15–20:15',kind:'야경',ko:'예원 옛거리',zh:'豫园商城',address:'上海市黄浦区方浜中路269号',detail:'구곡교(九曲桥)·호심정(湖心亭) 야경. 상업거리는 무료, 정원 내부는 일정에서 제외.'},
+{id:'d3-delivery',time:'20:30 이후',kind:'배달',ko:'센트럴 호텔 야식',zh:'水果 · 糯米糍 · 杨枝甘露',address:'上海市黄浦区九江路555号',detail:'과일, 찹쌀떡, 양쯔간루 중 가볍게 주문.'}
+]},
+{date:'2026-11-11',label:'11/11',weekday:'수',title:'귀국일',summary:'09:30 공항 이동, OZ364 귀국',items:[
+{id:'d4-pickup',time:'09:30',kind:'이동',ko:'센트럴 호텔 출발',zh:'上海王宝和大酒店 → 上海浦东国际机场',address:'上海市黄浦区九江路555号',detail:'예약 차량으로 공항 이동. 차량 예약번호는 제외.'},
+{id:'d4-airport',time:'10:30–13:10',kind:'공항',ko:'푸동공항 수속·면세점',zh:'上海浦东国际机场',address:'上海浦东国际机场',detail:'체크인·보안검색 후 간단한 식사와 면세점.'},
+{id:'d4-flight',time:'13:10–16:00',kind:'항공',ko:'상하이 → 인천',zh:'OZ364',address:'上海浦东国际机场',detail:'OZ364 탑승. 항공 예약번호는 포함하지 않음.'}
+]}
+];
+const STORE='shanghai-trip-2026-done-v1';
+function safeLoad(){try{return JSON.parse(localStorage.getItem(STORE)||'{}')}catch(e){return {}}} let done=safeLoad();
+for(const d of days)for(const x of d.items)if(x.seedDone&&done[x.id]===undefined)done[x.id]=true;
+function safeSave(){try{localStorage.setItem(STORE,JSON.stringify(done))}catch(e){toast('완료 상태를 저장할 수 없어요')}}
+function shanghaiDate(){try{return new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())}catch(e){return ''}}
+let active=Math.max(0,days.findIndex(d=>d.date===shanghaiDate()));
+function esc(s=''){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function mapUrl(x){const q=x.address||x.zh||x.ko;return `https://uri.amap.com/search?keyword=${encodeURIComponent(q)}&city=上海&src=shanghai-trip&callnative=1`}
+function todayCard(){const d=days[active], next=d.items.find(x=>!done[x.id]);document.getElementById('todayBox').innerHTML=`<div class="today-label">${d.date===shanghaiDate()?'TODAY · 오늘':'SELECTED DAY'}</div><div class="today-title">${esc(next?'다음: '+next.ko:d.title)}</div><div class="today-sub">${esc(next?next.time+' · '+d.summary:'오늘 일정 완료 · '+d.summary)}</div>`}
+function renderTabs(){document.getElementById('tabs').innerHTML=days.map((d,i)=>`<button class="tab ${i===active?'active':''}" data-i="${i}" aria-current="${i===active?'date':'false'}">${d.label}<span>${d.weekday}요일</span></button>`).join('');document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{active=+b.dataset.i;render()})}
+function itemHtml(x,nextId){return `<article class="item ${done[x.id]?'done':''} ${x.id===nextId?'now':''}" id="${x.id}"><div><span class="time">${esc(x.time)}</span><span class="kind">${esc(x.kind)}</span></div><div class="place">${esc(x.ko)}</div><div class="zh" lang="zh-CN">${esc(x.zh)}</div>${x.address?`<div class="address" lang="zh-CN">${esc(x.address)}</div>`:''}<div class="detail">${esc(x.detail)}</div>${x.menu?`<div class="menu"><strong>메뉴·주문</strong><br>${esc(x.menu)}</div>`:''}<div class="actions"><button class="action" data-copy="${esc(x.address||x.zh)}">주소 복사</button><a class="action map" href="${mapUrl(x)}" target="_blank" rel="noopener">Amap 열기</a><button class="check" data-check="${x.id}" aria-label="완료 전환">${done[x.id]?'✓':'○'}</button></div></article>`}
+function guideHtml(){return `<h3>🛵 메이퇀 배달 주문 가이드</h3><p>객실·전화번호는 이 페이지에 저장하지 말고 주문 앱에서만 입력하세요.</p><div class="step"><b>1.</b> 호텔 중국어명을 배송지로 검색 → 상세 주소는 앱 지도에서 확인</div><div class="step"><b>2.</b> 배달은 호텔 1층 로비 수령으로 요청<div class="phrase" lang="zh-CN">请送到酒店一楼大堂，我会下楼取。<button data-copy="请送到酒店一楼大堂，我会下楼取。">문구 복사</button></div></div><div class="step"><b>3.</b> 앱 메시지로 연락 요청<div class="phrase" lang="zh-CN">到了请在美团App里发消息，不要打电话。<button data-copy="到了请在美团App里发消息，不要打电话。">문구 복사</button></div></div><div class="step"><b>4.</b> 주문 요청 문구<div class="phrase" lang="zh-CN">少辣，不要香菜，餐具两份，谢谢。<button data-copy="少辣，不要香菜，餐具两份，谢谢。">덜 맵게·고수 제외·식기 2개 복사</button></div></div>`}
+function render(){const d=days[active],complete=d.items.filter(x=>done[x.id]).length,next=d.items.find(x=>!done[x.id]);renderTabs();todayCard();document.getElementById('dayView').innerHTML=`<div class="day-head"><div><h2>${d.label} ${d.title}</h2><p>${esc(d.summary)}</p></div><div class="progress">${complete}/${d.items.length} 완료</div></div><div class="bar"><i style="width:${complete/d.items.length*100}%"></i></div><div class="timeline">${d.items.map(x=>itemHtml(x,next&&next.id)).join('')}</div>`;document.getElementById('deliveryGuide').innerHTML=guideHtml();wire()}
+function fallbackCopy(text){const t=document.createElement('textarea');t.value=text;t.style.position='fixed';t.style.opacity='0';document.body.appendChild(t);t.select();try{document.execCommand('copy')}catch(e){}t.remove()}
+async function copyText(text){try{await navigator.clipboard.writeText(text)}catch(e){fallbackCopy(text)}toast('복사했습니다')}
+function wire(){document.querySelectorAll('[data-copy]').forEach(b=>b.onclick=()=>copyText(b.dataset.copy));document.querySelectorAll('[data-check]').forEach(b=>b.onclick=()=>{done[b.dataset.check]=!done[b.dataset.check];safeSave();render()})}
+let toastTimer;function toast(msg){const el=document.getElementById('toast');el.textContent=msg;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),1600)}
+render();
+</script>
+</body>
+</html>

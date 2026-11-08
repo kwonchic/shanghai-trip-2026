@@ -1,0 +1,7 @@
+# Local source and exports
+*.xlsx
+*.xls
+*.csv
+*.zip
+*.json
+.DS_Store
